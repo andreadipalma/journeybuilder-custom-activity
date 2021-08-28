@@ -1,7 +1,7 @@
 require('dotenv').config();
 const cookieParser = require('cookie-parser');
 const express = require('express');
-const helmet = require('helmet');
+//const helmet = require('helmet');
 const httpErrors = require('http-errors');
 const logger = require('morgan');
 const path = require('path');
@@ -10,6 +10,7 @@ const routes = require('./routes/index');
 const activityRouter = require('./routes/activity');
 
 const app = express();
+/*
 app.use(
   helmet({
     contentSecurityPolicy: {
@@ -20,6 +21,7 @@ app.use(
     },
   }),
 );
+*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
