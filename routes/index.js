@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const logger = require('../utils/logger');
 
 /**
  * Render Config
@@ -12,6 +13,7 @@ exports.config = (req, res) => {
 
   const configTemplate = fs.readFileSync(file, 'utf-8');
   const config = JSON.parse(configTemplate.replace(/\$DOMAIN/g, domain));
+  logger.log("DEBUG::: " + config);
   res.json(config);
 };
 
