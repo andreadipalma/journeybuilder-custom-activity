@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  article.slds-card
+    .slds-card__header.slds-grid
+      header.slds-media.slds-media_center.slds-has-flexi-truncate
+        .slds-media__figure
+          span.slds-icon_container.slds-icon-standard-contact(title="contact")
+            svg.slds-icon.slds-icon_small(aria-hidden="true")
+              use(xlink:href="/icons/standard-sprite/svg/symbols.svg#contact")
+            span.slds-assistive-text contact
+        .slds-media__body
+          h2.slds-card__header-title
+            a.slds-card__header-link.slds-truncate(href="javascript:void(0);" title="Card Header")
+              span= title
+    .slds-card__body.slds-card__body_inner
+      p Application Server Error 
+                                 
+    footer.slds-card__footer
