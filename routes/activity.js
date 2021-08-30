@@ -3,7 +3,6 @@ const JWT = require('../utils/jwtDecoder');
 const SFClient = require('../utils/sfmc-client');
 const logger = require('../utils/logger');
 
-
 /**
  * The Journey Builder calls this method for each contact processed by the journey.
  * @param req
