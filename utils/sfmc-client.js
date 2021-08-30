@@ -1,4 +1,5 @@
 const FuelRest = require('fuel-rest');
+const logger = require('../utils/logger');
 
 const options = {
   auth: {
@@ -30,6 +31,10 @@ const saveData = async (externalKey, data) => client.post({
   },
   json: true,
   body: data,
+}).then((resp) => { 
+  logger.log(resp); 
+}).catch((err) => {
+  logger.log(err);
 });
 
 module.exports = {

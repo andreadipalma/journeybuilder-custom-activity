@@ -1,7 +1,7 @@
 require('dotenv').config();
 const cookieParser = require('cookie-parser');
 const express = require('express');
-//const helmet = require('helmet');
+/* const helmet = require('helmet'); */
 const httpErrors = require('http-errors');
 const logger = require('morgan');
 const path = require('path');
@@ -45,6 +45,7 @@ app.use('/journey/execute/', activityRouter.execute);
 app.use('/journey/save/', activityRouter.save);
 app.use('/journey/publish/', activityRouter.publish);
 app.use('/journey/validate/', activityRouter.validate);
+app.use('/journey/testExecute/', activityRouter.testExecute);
 
 // serve UI
 app.use('/', routes.ui);

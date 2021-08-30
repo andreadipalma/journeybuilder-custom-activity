@@ -17,7 +17,13 @@
       "header": "",
       "format": "json",
       "useJwt": true,
-      "timeout": 10000
+      "timeout": 10000,
+      "inArguments": [
+        {
+          // "phoneNumber": "{{Contact.Default.PhoneNumber}}"
+          "phoneNumber": "+39068927371777"
+        }
+      ]
     }
   },
   "configurationArguments": {
@@ -46,6 +52,21 @@
     "configInspector": {
       "hideHeader": true,
       "size": "scm-sm"
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [
+          {
+            "phoneNumber": {
+              "dataType": "Phone",
+              "isNullable": false,
+              "direction": "in"
+            }
+          }
+        ]
+      }
     }
   }
 }

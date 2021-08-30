@@ -28,8 +28,11 @@ block content
             | Text *
           .slds-form-element__control
             input#Text.slds-input.js-activity-setting(required='', placeholder='', name='text')
+          
+          .slds-p-top_medium.slds-form-element__control
+            button.slds-button.slds-button_brand(type='button' onclick='callAWSOutboundFlow("' + 'HI THERE' + '")') Call Now Bimbo                
 
-
-          button.slds-form-element__button.slds-p-top_medium(type='button') | Call Now            
-
+          .slds-p-top_medium.slds-form-element__control
+            button.slds-button.slds-button_brand(type='button' onclick='saveData()') Save Data  
+                          
     footer.slds-card__footer
