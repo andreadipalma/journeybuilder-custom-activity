@@ -20,7 +20,6 @@
       "timeout": 10000,
       "inArguments": [
         {
-          // "phoneNumber": "{{Contact.Default.PhoneNumber}}"
           "phoneNumber": "+39068927371777"
         }
       ]
